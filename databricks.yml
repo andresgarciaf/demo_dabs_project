@@ -47,7 +47,7 @@ variables:
       spark_version: ${var.spark_version}
       node_type_id: ${var.node_type_id}
       data_security_mode: USER_ISOLATION
-      aws_attributes:
+      azure_attributes:
         availability: ON_DEMAND
       policy_id: ${var.job_policy_id}
       autoscale:
