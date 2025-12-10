@@ -96,7 +96,7 @@ targets:
     run_as:
       # This can run as a specific user or service principal in production.
       # To run as service principal use service_principal_name (see Databricks documentation).
-      user_name: ${workspace.current_user.userName}
+      service_principal_name: ${workspace.current_user.userName}
     variables:
       database: flights_${bundle.target}
       flights_dlt_schema: flights_dlt_${bundle.target}
