@@ -14,9 +14,6 @@ jobs:
     name: "Test code and bundle"
     runs-on: ubuntu-latest
     environment: prod
-    defaults:
-      run:
-        working-directory: ./demo_dabs_project
   
     steps:
       - uses: actions/checkout@v3
@@ -33,9 +30,6 @@ jobs:
     name: "Run deploy"
     runs-on: ubuntu-latest
     environment: prod
-    defaults:
-      run:
-        working-directory: ./demo_dabs_project
 
     needs:
       - validate
