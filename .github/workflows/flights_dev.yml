@@ -20,7 +20,7 @@ jobs:
     environment: 'dev'
     defaults:
       run:
-        working-directory: ./flights/flights-advanced
+        working-directory: ./demo_dabs_project
  
     steps:
       - uses: actions/checkout@v3
@@ -59,7 +59,7 @@ jobs:
     environment: 'dev'
     defaults:
       run:
-        working-directory: ./flights/flights-advanced
+        working-directory: ./demo_dabs_project
 
     needs:
       - validate
