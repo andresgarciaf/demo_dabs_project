@@ -1,0 +1,1 @@
+databricks sync . /Users/andres.garcia@databricks.com/flights_sync
