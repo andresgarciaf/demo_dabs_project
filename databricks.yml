@@ -34,7 +34,7 @@ variables:
   spark_version:
     default: "15.3.x-scala2.12"
   node_type_id:
-    default: "m6gd.xlarge"
+    default: "Standard_D16ds_v5"
   warehouse_id:
     lookup:
       warehouse: "Shared Serverless"
