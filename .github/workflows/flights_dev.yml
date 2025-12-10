@@ -74,7 +74,7 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
-          databricks bundle run notebook_validation_job --target test_automated --refresh-all 2>&1 | tee output.log
+          databricks bundle run notebook_validation_job --target dev --refresh-all 2>&1 | tee output.log
         env:
           DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
           DATABRICKS_CLIENT_ID: ${{ secrets.DATABRICKS_CLIENT_ID }}
